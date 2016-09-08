@@ -1,0 +1,70 @@
+html
+  box-sizing: border-box
+
+
+*, *:before, *:after
+  box-sizing: inherit
+
+
+body
+	margin: 0
+	padding: 0
+	font-size: $base-font-size
+	background-color: deepskyblue
+	padding: 30px 0
+	color: #2c3e50
+	font-family: 'Open Sans', sans-serif
+	display: flex
+
+p
+	color: #666
+
+header,
+main,
+footer
+	width: 80%
+	margin: 0 auto
+	background-color: #fafafa
+	padding: 15px 40px
+
+header
+	border-radius: 5px 5px 0 0
+	padding: 40px 40px 40px 40px
+
+	h1
+		margin: 15px 0 0 0
+		text-transform: uppercase
+
+.wrapper
+	flex-grow: 1
+
+.avatar
+	width: 100px
+	height: 100px
+	border-radius: 50px
+	float: left
+	margin-right: 20px
+	background: #fff
+	background-image: url(../img/sun.jpg)
+	background-size: contain
+
+///PLACEHOLDER DEFAULT STYLES
+/* Webkit */
+::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+/* Firefox 4-18 */
+:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+/* Firefox 19+ */
+::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+/* IE10+ */
+:-ms-input-placeholder
+	color: #fff
+	opacity: 1
