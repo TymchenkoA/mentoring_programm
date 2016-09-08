@@ -4,7 +4,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const BUILD_DIR = path.resolve(__dirname, './client/build/');
-const APP_DIR = path.resolve(__dirname, './client/src');
+const APP_DIR = path.resolve(__dirname, './client/src/scripts');
 
 const webpackConfig = {
 	entry: APP_DIR + '/index.js',
