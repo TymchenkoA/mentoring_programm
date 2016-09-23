@@ -7,7 +7,7 @@ const BUILD_DIR = path.resolve(__dirname, './client/build/');
 const APP_DIR = path.resolve(__dirname, './client/src/scripts');
 
 const webpackConfig = {
-	entry: APP_DIR + '/index.js',
+	entry: APP_DIR + '/app.js',
 	output: {
 		path: BUILD_DIR,
 		filename: 'bundle.js'
@@ -28,7 +28,8 @@ const webpackConfig = {
 		loaders: [
 			{
 				loader: 'babel-loader',
-				test: /\.js$/
+				test: /\.js$/,
+                exclude: /node_modules/
 			},
 			{
 				loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader'),
@@ -37,6 +38,10 @@ const webpackConfig = {
             {
                 loaders: ['url', 'img'],
                 test: /\.(png|jpg|svg)$/
+            },
+            {
+                loader: 'raw',
+                test: /\.html$/
             }
 		]
 	},

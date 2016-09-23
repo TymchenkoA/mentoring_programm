@@ -29,6 +29,7 @@
     "node-sass": "^3.8.0",
     "postcss": "^5.1.2",
     "postcss-loader": "^0.11.1",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "stylelint": "^7.2.0",
