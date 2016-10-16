@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Tymchenko Anastasiia",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.7.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.13.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.1.0",
+    "cookie-parser": "^1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "^2.4.1",
+    "nodemon": "^1.10.2",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mime": "^1.3.4",
+    "mongoose": "^4.4.7",
+    "mongoose-findorcreate": "^0.1.2",
+    "multiparty": "^4.1.2",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^1.4.5"
+  }
+}
